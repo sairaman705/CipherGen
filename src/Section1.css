@@ -450,3 +450,41 @@ label {
     margin-left: 16px;
   }
 }
+
+@media (max-width: 376px){
+  .generator-container{
+    width: 350px;
+  }
+
+  .password-generator .input-box{
+    width: 310px;
+  }
+
+  .pass-indicator, .pass-length{
+    width: 330px;
+  }
+
+  .pass-settings .options{
+    padding: 0 15px;
+  }
+
+  .pass-settings .options .option .options_headings{
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .generate-btn{
+    width: 330px;
+    margin-right: 190px;
+  }
+
+  .gen-load-key-btn button{
+    font-size: 10px;
+  }
+
+  .gen-load-key input[type="file"]{
+    margin-top: 1px;
+    margin-right: 236px;
+    font-size: 11px;
+  }
+}

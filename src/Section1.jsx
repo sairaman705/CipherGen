@@ -428,14 +428,12 @@ const PasswordGenerator = () => {
                     className=""
                     type="text"
                     placeholder="Filename.key"
-                    
                     onChange={(e) => setencFileName(e.target.value)}
                   />
                 </div>
                 <div className="gen-load-key-btn">
                   <button onClick={generateKey}>Generate Key</button>
                   <div className="load-file">
-                    <p>Load Key</p>
                     <input className="load-inpt" type="file" accept=".key" onChange={loadKey} />
                   </div>
                 </div>
