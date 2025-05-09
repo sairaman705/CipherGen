@@ -20,13 +20,13 @@ const App = () => {
         <Section2 />
       </div>
 
-      <div id="section-3">  
+      <div id="faq">  
         <Accordian data={accordianData} />
       </div>
-      <div id="section-4">
+      <div id="about">
         <About />
       </div>
-      <div id="section-5">
+      <div id="contact">
         <Footer />
       </div>
     </>
