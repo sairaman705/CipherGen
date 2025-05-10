@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <img src="Images/cipherGenLogo.png" alt="" />
+        <img src="./Images/cipherGenLogo.png" alt="" />
         <p>CipherGen</p>
       </div>
       <ul className="menus">
