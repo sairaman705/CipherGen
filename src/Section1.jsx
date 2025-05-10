@@ -143,6 +143,18 @@ const PasswordGenerator = () => {
 
   // generate key and save
   const generateKey = () => {
+
+    const trimName = encFileName.trim();
+
+    if(!trimName){
+      toast.error("Please enter key file name before generating", {
+        position: "top-right",
+        autoClose: 2000,
+        theme: "colored",
+      });
+      return;
+    }
+
     const key = CryptoJS.lib.WordArray.random(16).toString(); // 128-bit key
     const blob = new Blob([key], { type: "text/plain" });
     const link = document.createElement("a");
@@ -156,6 +168,12 @@ const PasswordGenerator = () => {
 
     link.download = fileName;
     link.click();
+
+    toast.success("Key file generated and saved", {
+      position: "top-right",
+      autoClose: 2000,
+      theme: "light",
+    });
   };
 
   // load key
