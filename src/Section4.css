@@ -1,6 +1,6 @@
 .binary-section {
   overflow: hidden;
-  background: url("../Images/cipherBinary.png");
+  background: url("../public/Images/cipherBinary.png");
   padding: 100px;
   align-items: center;
 }
